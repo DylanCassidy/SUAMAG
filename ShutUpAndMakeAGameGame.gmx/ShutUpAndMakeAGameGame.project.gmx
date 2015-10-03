@@ -6,55 +6,84 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_wall1</sprite>
-    <sprite>sprites\spr_wall2</sprite>
-    <sprite>sprites\spr_wall3</sprite>
-    <sprite>sprites\spr_wall4</sprite>
-    <sprite>sprites\spr_tile_red</sprite>
-    <sprite>sprites\spr_tile_blue</sprite>
-    <sprite>sprites\spr_tile_yellow</sprite>
-    <sprite>sprites\spr_tile_green</sprite>
-    <sprite>sprites\spr_tile_pink</sprite>
-    <sprite>sprites\spr_tile_lightblue</sprite>
-    <sprite>sprites\spr_play_Valeria</sprite>
-    <sprite>sprites\spr_play_Leo</sprite>
-    <sprite>sprites\spr_end_Valeria</sprite>
-    <sprite>sprites\spr_end_Leo</sprite>
-    <sprite>sprites\spr_enemy</sprite>
-    <sprite>sprites\spr_trans_red</sprite>
-    <sprite>sprites\spr_trans_blue</sprite>
-    <sprite>sprites\spr_trans_yellow</sprite>
-    <sprite>sprites\spr_trans_green</sprite>
-    <sprite>sprites\spr_trans_pink</sprite>
-    <sprite>sprites\spr_trans_lightblue</sprite>
+    <sprites name="wall">
+      <sprite>sprites\spr_wall1</sprite>
+      <sprite>sprites\spr_wall2</sprite>
+      <sprite>sprites\spr_wall3</sprite>
+      <sprite>sprites\spr_wall4</sprite>
+    </sprites>
+    <sprites name="tile">
+      <sprite>sprites\spr_tile_red</sprite>
+      <sprite>sprites\spr_tile_blue</sprite>
+      <sprite>sprites\spr_tile_yellow</sprite>
+      <sprite>sprites\spr_tile_green</sprite>
+      <sprite>sprites\spr_tile_pink</sprite>
+      <sprite>sprites\spr_tile_lightblue</sprite>
+    </sprites>
+    <sprites name="end">
+      <sprite>sprites\spr_end_Valeria</sprite>
+      <sprite>sprites\spr_end_Leo</sprite>
+    </sprites>
+    <sprites name="play">
+      <sprite>sprites\spr_play_Valeria</sprite>
+      <sprite>sprites\spr_play_Leo</sprite>
+    </sprites>
+    <sprites name="enemy">
+      <sprite>sprites\spr_enemy</sprite>
+    </sprites>
+    <sprites name="trans">
+      <sprite>sprites\spr_trans_red</sprite>
+      <sprite>sprites\spr_trans_blue</sprite>
+      <sprite>sprites\spr_trans_yellow</sprite>
+      <sprite>sprites\spr_trans_green</sprite>
+      <sprite>sprites\spr_trans_pink</sprite>
+      <sprite>sprites\spr_trans_lightblue</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\obj_wall1</object>
-    <object>objects\obj_wall2</object>
-    <object>objects\obj_wall3</object>
-    <object>objects\obj_wall4</object>
-    <object>objects\obj_tile_red</object>
-    <object>objects\obj_tile_blue</object>
-    <object>objects\obj_tile_yellow</object>
-    <object>objects\obj_tile_green</object>
-    <object>objects\obj_tile_pink</object>
-    <object>objects\obj_tile_lightblue</object>
-    <object>objects\obj_end_Valeria</object>
-    <object>objects\obj_play_Valeria</object>
-    <object>objects\obj_end_Leo</object>
-    <object>objects\obj_play_Leo</object>
-    <object>objects\obj_enemy</object>
-    <object>objects\obj_trans_red</object>
-    <object>objects\obj_trans_blue</object>
-    <object>objects\obj_trans_yellow</object>
-    <object>objects\obj_trans_green</object>
-    <object>objects\obj_trans_pink</object>
-    <object>objects\obj_trans_lightblue</object>
+    <objects name="wall">
+      <object>objects\obj_wall_base</object>
+      <object>objects\obj_wall1</object>
+      <object>objects\obj_wall2</object>
+      <object>objects\obj_wall3</object>
+      <object>objects\obj_wall4</object>
+    </objects>
+    <objects name="tile">
+      <object>objects\obj_tile_base</object>
+      <object>objects\obj_tile_red</object>
+      <object>objects\obj_tile_blue</object>
+      <object>objects\obj_tile_yellow</object>
+      <object>objects\obj_tile_green</object>
+      <object>objects\obj_tile_pink</object>
+      <object>objects\obj_tile_lightblue</object>
+    </objects>
+    <objects name="end">
+      <object>objects\obj_end_base</object>
+      <object>objects\obj_end_Valeria</object>
+      <object>objects\obj_end_Leo</object>
+    </objects>
+    <objects name="play">
+      <object>objects\obj_play_base</object>
+      <object>objects\obj_play_Valeria</object>
+      <object>objects\obj_play_Leo</object>
+    </objects>
+    <objects name="enemy">
+      <object>objects\obj_enemy</object>
+    </objects>
+    <objects name="trans">
+      <object>objects\obj_trans_base</object>
+      <object>objects\obj_trans_red</object>
+      <object>objects\obj_trans_blue</object>
+      <object>objects\obj_trans_yellow</object>
+      <object>objects\obj_trans_green</object>
+      <object>objects\obj_trans_pink</object>
+      <object>objects\obj_trans_lightblue</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\map1</room>
+    <room>rooms\rm_map1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
