@@ -16,6 +16,17 @@
     <sprite>sprites\spr_tile_green</sprite>
     <sprite>sprites\spr_tile_pink</sprite>
     <sprite>sprites\spr_tile_lightblue</sprite>
+    <sprite>sprites\spr_play_Valeria</sprite>
+    <sprite>sprites\spr_play_Leo</sprite>
+    <sprite>sprites\spr_end_Valeria</sprite>
+    <sprite>sprites\spr_end_Leo</sprite>
+    <sprite>sprites\spr_enemy</sprite>
+    <sprite>sprites\spr_trans_red</sprite>
+    <sprite>sprites\spr_trans_blue</sprite>
+    <sprite>sprites\spr_trans_yellow</sprite>
+    <sprite>sprites\spr_trans_green</sprite>
+    <sprite>sprites\spr_trans_pink</sprite>
+    <sprite>sprites\spr_trans_lightblue</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -30,6 +41,17 @@
     <object>objects\obj_tile_green</object>
     <object>objects\obj_tile_pink</object>
     <object>objects\obj_tile_lightblue</object>
+    <object>objects\obj_end_Valeria</object>
+    <object>objects\obj_play_Valeria</object>
+    <object>objects\obj_end_Leo</object>
+    <object>objects\obj_play_Leo</object>
+    <object>objects\obj_enemy</object>
+    <object>objects\obj_trans_red</object>
+    <object>objects\obj_trans_blue</object>
+    <object>objects\obj_trans_yellow</object>
+    <object>objects\obj_trans_green</object>
+    <object>objects\obj_trans_pink</object>
+    <object>objects\obj_trans_lightblue</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\map1</room>
