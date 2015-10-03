@@ -84,6 +84,10 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_map1</room>
+    <room>rooms\rm_title_screen</room>
+    <room>rooms\rm_gender_screen</room>
+    <room>rooms\rm_end_screen</room>
+    <room>rooms\rm_credits</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
