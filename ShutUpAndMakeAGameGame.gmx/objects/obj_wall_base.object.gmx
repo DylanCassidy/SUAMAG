@@ -32,146 +32,6 @@ move = 0;
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="3">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if id mod 4 == 3 {
-    angle = random(4);
-    if angle == 0 or angle == 4{
-        image_angle = 0;
-    } else if angle == 1 {
-        image_angle = 90;
-    } else if angle == 2 {
-        image_angle = 180;
-    } else {
-        image_angle = 270;
-    }
-}
-alarm[3] = 400;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="2">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if id mod 4 == 2 {
-    angle = random(4);
-    if angle == 0 or angle == 4{
-        image_angle = 0;
-    } else if angle == 1 {
-        image_angle = 90;
-    } else if angle == 2 {
-        image_angle = 180;
-    } else {
-        image_angle = 270;
-    }
-}
-alarm[2] = 300;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="1">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if id mod 4 == 1 {
-    angle = random(4);
-    if angle == 0 or angle == 4{
-        image_angle = 0;
-    } else if angle == 1 {
-        image_angle = 90;
-    } else if angle == 2 {
-        image_angle = 180;
-    } else {
-        image_angle = 270;
-    }
-}
-alarm[1] = 200;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if id mod 4 == 1 {
-    angle = random(4);
-    if angle == 0 or angle == 4{
-        image_angle = 0;
-    } else if angle == 1 {
-        image_angle = 90;
-    } else if angle == 2 {
-        image_angle = 180;
-    } else {
-        image_angle = 270;
-    }
-}
-alarm[0] = 100;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -199,7 +59,9 @@ if id mod 4 == 0 &amp;&amp; move mod 80 == 20 {
 } else if id mod 4 == 3 &amp;&amp; move mod 80 == 0{
     image_angle -= 90;
 }
-
+if move == 80 {
+    move = 0;
+}
 </string>
           </argument>
         </arguments>
