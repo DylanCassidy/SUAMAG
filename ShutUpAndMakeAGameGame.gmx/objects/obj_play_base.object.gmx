@@ -48,7 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>speed = 5; 
+            <string>speed = 4; 
 if keyboard_check(vk_right){
     direction = 0;
     if x &gt;= room_width - 40 {
