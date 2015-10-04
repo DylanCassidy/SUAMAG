@@ -40,12 +40,7 @@
       <sprite>sprites\spr_trans_lightblue</sprite>
     </sprites>
     <sprites name="misc">
-      <sprite>sprites\spr_gender1</sprite>
-      <sprite>sprites\spr_gender2</sprite>
-      <sprite>sprites\spr_male</sprite>
-      <sprite>sprites\spr_female</sprite>
-      <sprite>sprites\spr_title</sprite>
-      <sprite>sprites\spr_credits</sprite>
+      <sprite>sprites\spr_submit</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -61,10 +56,10 @@
       <object>objects\obj_wall1</object>
       <object>objects\obj_wall2</object>
       <object>objects\obj_wall3</object>
-      <object>objects\obj_wall4</object>
+      <object>objects\obj_tile_red</object>
     </objects>
     <objects name="tile">
-      <object>objects\obj_tile_base</object>
+      <object>objects\obj_tile_blue</object>
       <object>objects\obj_tile_red</object>
       <object>objects\obj_tile_blue</object>
       <object>objects\obj_tile_yellow</object>
@@ -95,13 +90,7 @@
       <object>objects\obj_trans_lightblue</object>
     </objects>
     <objects name="misc">
-      <object>objects\obj_gender_words1</object>
-      <object>objects\obj_gender_words2</object>
-      <object>objects\obj_male</object>
-      <object>objects\obj_female</object>
-      <object>objects\obj_gender_base</object>
-      <object>objects\obj_title</object>
-      <object>objects\obj_credits</object>
+      <object>objects\obj_submit</object>
     </objects>
   </objects>
   <rooms name="rooms">
