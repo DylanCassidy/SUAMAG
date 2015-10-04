@@ -39,8 +39,21 @@
       <sprite>sprites\spr_trans_pink</sprite>
       <sprite>sprites\spr_trans_lightblue</sprite>
     </sprites>
+    <sprites name="misc">
+      <sprite>sprites\spr_gender1</sprite>
+      <sprite>sprites\spr_gender2</sprite>
+      <sprite>sprites\spr_male</sprite>
+      <sprite>sprites\spr_female</sprite>
+      <sprite>sprites\spr_title</sprite>
+      <sprite>sprites\spr_credits</sprite>
+    </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bck_title_screen</background>
+    <background>background\bck_gender_screen</background>
+    <background>background\bck_end_screen</background>
+    <background>background\bck_credits</background>
+  </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <objects name="wall">
@@ -80,6 +93,15 @@
       <object>objects\obj_trans_green</object>
       <object>objects\obj_trans_pink</object>
       <object>objects\obj_trans_lightblue</object>
+    </objects>
+    <objects name="misc">
+      <object>objects\obj_gender_words1</object>
+      <object>objects\obj_gender_words2</object>
+      <object>objects\obj_male</object>
+      <object>objects\obj_female</object>
+      <object>objects\obj_gender_base</object>
+      <object>objects\obj_title</object>
+      <object>objects\obj_credits</object>
     </objects>
   </objects>
   <rooms name="rooms">
