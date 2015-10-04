@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>depth = -100;
 direction = random(360);
-speed = 2;
+speed = 3;
 </string>
           </argument>
         </arguments>

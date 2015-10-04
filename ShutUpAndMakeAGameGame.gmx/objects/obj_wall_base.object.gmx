@@ -27,6 +27,17 @@
             <kind>1</kind>
             <string>depth = -100;
 move = 0;
+
+initial = random(4);
+if initial == 1 {
+    image_angle = 0;
+} else if initial == 2 {
+    image_angle = 90;
+} else if initial == 3 {
+    image_angle = 180;
+} else {
+    image_angle = 270;
+}
 </string>
           </argument>
         </arguments>
