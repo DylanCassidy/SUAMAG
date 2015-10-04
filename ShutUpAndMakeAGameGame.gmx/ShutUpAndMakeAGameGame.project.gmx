@@ -11,6 +11,7 @@
       <sprite>sprites\spr_wall2</sprite>
       <sprite>sprites\spr_wall3</sprite>
       <sprite>sprites\spr_wall4</sprite>
+      <sprite>sprites\spr_invisible</sprite>
     </sprites>
     <sprites name="tile">
       <sprite>sprites\spr_tile_red</sprite>
@@ -62,6 +63,16 @@
       <object>objects\obj_wall2</object>
       <object>objects\obj_wall3</object>
       <object>objects\obj_tile_red</object>
+      <objects name="invisible">
+        <object>objects\obj_colour_wall_base</object>
+        <object>objects\obj_red_wall</object>
+        <object>objects\obj_blue_wall</object>
+        <object>objects\obj_yellow_wall</object>
+        <object>objects\obj_green_wall</object>
+        <object>objects\obj_pink_wall</object>
+        <object>objects\obj_lightblue_wall</object>
+        <object>objects\obj_black_wall</object>
+      </objects>
     </objects>
     <objects name="tile">
       <object>objects\obj_tile_base</object>
