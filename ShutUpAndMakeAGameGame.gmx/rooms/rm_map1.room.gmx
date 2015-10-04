@@ -1813,7 +1813,7 @@ instance_create(room_width - 40, room_height - 40,lover);</code>
     <instance objName="obj_wall1" x="1480" y="120" name="inst_88F3A87E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall1" x="480" y="320" name="inst_276647BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall1" x="1320" y="1000" name="inst_BB68909C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall1" x="1520" y="960" name="inst_88B0AFFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall1" x="1520" y="920" name="inst_88B0AFFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall1" x="1600" y="840" name="inst_3F0D8498" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall1" x="1720" y="680" name="inst_E8C2EDDB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall1" x="1760" y="480" name="inst_FC69B444" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1828,9 +1828,9 @@ instance_create(room_width - 40, room_height - 40,lover);</code>
     <instance objName="obj_wall1" x="1040" y="240" name="inst_39431654" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall1" x="800" y="120" name="inst_51D7AB88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall1" x="760" y="680" name="inst_BB130114" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall1" x="480" y="40" name="inst_7985961D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall1" x="1880" y="720" name="inst_4E9527A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall1" x="1440" y="1040" name="inst_F8E6F6BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall1" x="520" y="80" name="inst_7985961D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall1" x="1840" y="720" name="inst_4E9527A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall1" x="1440" y="1000" name="inst_F8E6F6BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_green_wall" x="1480" y="880" name="inst_94DB1DA5" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_green_wall" x="1600" y="880" name="inst_5F1D3D23" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
     <instance objName="obj_green_wall" x="1600" y="920" name="inst_FBCAA93D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1873,7 +1873,9 @@ instance_create(room_width - 40, room_height - 40,lover);</code>
     <instance objName="obj_red_wall" x="120" y="0" name="inst_36E9B22E" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="270"/>
     <instance objName="obj_enemy" x="440" y="80" name="inst_03F04F5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
-  <tiles/>
+  <tiles>
+    <tile bgName="" x="480" y="0" w="16" h="16" xo="0" yo="0" id="10000001" name="inst_26387304" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+  </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
   <PhysicsWorldLeft>0</PhysicsWorldLeft>
