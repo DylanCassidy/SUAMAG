@@ -55,6 +55,10 @@ if keyboard_check(vk_right){
         speed = 0;
     } 
     if !place_free(x+2,y) {
+        /*if position_meeting(x+2,y,obj_enemy){
+            x = 0;
+            y = 0;
+        }*/
         speed = 0;
     }
 }
@@ -64,6 +68,10 @@ else if keyboard_check(vk_up){
         speed = 0;
     } 
     if !place_free(x,y-2) {
+        /*if position_meeting(x,y-2,obj_enemy){
+            x = 0;
+            y = 0;
+        }*/
         speed = 0;
     }
 } 
@@ -73,6 +81,10 @@ else if keyboard_check(vk_left){
         speed = 0;
     } 
     if !place_free(x-2,y) {
+        /*if position_meeting(x-2,y,obj_enemy){
+            x = 0;
+            y = 0;
+        }*/
         speed = 0;
     }
 }
@@ -82,6 +94,10 @@ else if keyboard_check(vk_down){
         speed = 0;
     } 
     if !place_free(x,y+2) {
+        /*if position_meeting(x,y+2,obj_enemy){
+            x = 0;
+            y = 0;
+        }*/
         speed = 0;
     }
 }
@@ -89,7 +105,13 @@ else {
     speed = 0;
 }
 
-motion_set(direction, speed);
+if collision_circle(x+20, y+20, 21, obj_enemy, false, true) {
+   x = 5;
+   y = 5;
+} else {
+    motion_set(direction, speed);
+}
+
 
 </string>
           </argument>
