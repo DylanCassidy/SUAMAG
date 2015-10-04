@@ -28,8 +28,8 @@
             <string>with (obj_blue_wall) {
     instance_destroy();
 }
-with (obj_tile_blue) {
-    instance_create(x, y, obj_tile_red);
+with (obj_tile_red) {
+    instance_create(x, y, obj_tile_blue);
     instance_destroy();
 }
 instance_destroy();
@@ -58,8 +58,8 @@ instance_destroy();
             <string>with (obj_blue_wall) {
     instance_destroy();
 }
-with (obj_tile_blue) {
-    instance_create(x, y, obj_tile_red);
+with (obj_tile_red) {
+    instance_create(x, y, obj_tile_blue);
     instance_destroy();
 }
 instance_destroy();
