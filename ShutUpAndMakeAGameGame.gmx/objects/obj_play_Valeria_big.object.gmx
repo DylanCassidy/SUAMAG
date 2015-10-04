@@ -62,7 +62,7 @@
             } else {
                 add_end = obj_end_Leo;
             }
-            room_instance_add(room+1, 0, 0, obj_play_Valeria);
+            room_instance_add(room+1, 5, 5, obj_play_Valeria);
             room_instance_add(room+1, room_width - 40, room_height - 40, add_end);
             room_goto_next();
         }
