@@ -41,21 +41,21 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_play_Valeria" x="672" y="288" name="inst_1E12FB80" locked="0" code="" scaleX="5.59999990463257" scaleY="5.59999990463257" colour="4294967295" rotation="0"/>
-    <instance objName="obj_play_Leo" x="992" y="288" name="inst_15CFD49E" locked="0" code="" scaleX="5.59999990463257" scaleY="5.59999990463257" colour="4294967295" rotation="0"/>
-    <instance objName="obj_end_Valeria" x="672" y="640" name="inst_DC126EA9" locked="0" code="" scaleX="5.59999990463257" scaleY="5.59999990463257" colour="4294967295" rotation="0"/>
-    <instance objName="obj_end_Leo" x="992" y="640" name="inst_B5AF6DA3" locked="0" code="" scaleX="5.74358987808228" scaleY="5.59999990463257" colour="4294967295" rotation="0"/>
     <instance objName="obj_submit" x="1472" y="864" name="inst_74A4064D" locked="0" code="" scaleX="0.808000028133392" scaleY="0.893333315849304" colour="4294967295" rotation="0"/>
+    <instance objName="obj_play_Valeria_big" x="992" y="288" name="inst_0B66BEBF" locked="0" code="" scaleX="0.230171069502831" scaleY="0.211295038461685" colour="4294967295" rotation="0"/>
+    <instance objName="obj_play_Leo_big" x="672" y="288" name="inst_629967C1" locked="0" code="" scaleX="0.224458202719688" scaleY="0.210679605603218" colour="4294967295" rotation="0"/>
+    <instance objName="obj_end_Valeria_big" x="992" y="640" name="inst_85D7AD2E" locked="0" code="" scaleX="0.239875391125679" scaleY="0.212415128946304" colour="4294967295" rotation="0"/>
+    <instance objName="obj_end_Leo_big" x="672" y="640" name="inst_8015ECEA" locked="0" code="" scaleX="0.224458202719688" scaleY="0.210679605603218" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

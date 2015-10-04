@@ -23,10 +23,14 @@
     <sprites name="end">
       <sprite>sprites\spr_end_Valeria</sprite>
       <sprite>sprites\spr_end_Leo</sprite>
+      <sprite>sprites\spr_end_Valeria_big</sprite>
+      <sprite>sprites\spr_end_Leo_big</sprite>
     </sprites>
     <sprites name="play">
       <sprite>sprites\spr_play_Valeria</sprite>
       <sprite>sprites\spr_play_Leo</sprite>
+      <sprite>sprites\spr_play_Valeria_big</sprite>
+      <sprite>sprites\spr_play_Leo_big</sprite>
     </sprites>
     <sprites name="enemy">
       <sprite>sprites\spr_enemy</sprite>
@@ -72,11 +76,15 @@
       <object>objects\obj_end_base</object>
       <object>objects\obj_end_Valeria</object>
       <object>objects\obj_end_Leo</object>
+      <object>objects\obj_end_Valeria_big</object>
+      <object>objects\obj_end_Leo_big</object>
     </objects>
     <objects name="play">
       <object>objects\obj_play_base</object>
       <object>objects\obj_play_Valeria</object>
       <object>objects\obj_play_Leo</object>
+      <object>objects\obj_play_Valeria_big</object>
+      <object>objects\obj_play_Leo_big</object>
     </objects>
     <objects name="enemy">
       <object>objects\obj_enemy</object>
