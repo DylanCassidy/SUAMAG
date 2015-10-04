@@ -26,9 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>if room_get_name(room) == "rm_end_screen"{
-    alarm[0] = 20;
-    alarm[1] = 40;
-    alarm[2] = 80;
+    alarm[0] = 50;
+    alarm[1] = 70;
+    alarm[2] = 130;
 }
 </string>
           </argument>

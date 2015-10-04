@@ -10,7 +10,19 @@
   <persistent>0</persistent>
   <colour>0</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>if global.player == 1 {
+    player = obj_play_Valeria;
+} else {
+    player = obj_play_Leo;
+}
+if global.lover == 1 {
+    lover = obj_end_Valeria;
+} else {
+    lover = obj_end_Leo;
+}
+
+instance_create(5,5,player);
+instance_create(room_width - 40, room_height - 40,lover);</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
