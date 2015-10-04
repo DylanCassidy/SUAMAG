@@ -87,15 +87,11 @@
       <object>objects\obj_end_base</object>
       <object>objects\obj_end_Valeria</object>
       <object>objects\obj_end_Leo</object>
-      <object>objects\obj_end_Valeria_big</object>
-      <object>objects\obj_end_Leo_big</object>
     </objects>
     <objects name="play">
       <object>objects\obj_play_base</object>
       <object>objects\obj_play_Valeria</object>
       <object>objects\obj_play_Leo</object>
-      <object>objects\obj_play_Valeria_big</object>
-      <object>objects\obj_play_Leo_big</object>
     </objects>
     <objects name="enemy">
       <object>objects\obj_enemy</object>
@@ -112,6 +108,12 @@
     <objects name="misc">
       <object>objects\obj_submit</object>
       <object>objects\obj_clicker</object>
+    </objects>
+    <objects name="bigs">
+      <object>objects\obj_end_Leo_big</object>
+      <object>objects\obj_play_Valeria_big</object>
+      <object>objects\obj_end_Valeria_big</object>
+      <object>objects\obj_play_Leo_big</object>
     </objects>
   </objects>
   <rooms name="rooms">

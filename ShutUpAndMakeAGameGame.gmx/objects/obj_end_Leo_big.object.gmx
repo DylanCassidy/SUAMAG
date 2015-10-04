@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="6" enumb="0">
+    <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,11 +25,71 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with (obj_end_Valeria_big){
-    instance_destroy();
+            <string>moving = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (moving == true) {
+    if point_distance(x, y, room_width/2-sprite_width, y) &gt; 5{
+        move_towards_point(room_width/2-sprite_width, y, 5);
+   }
+    else {
+        speed = 0;
+        moving = false;
+        global.lover = 2;
+        if (global.player != noone) {
+            room_goto_next();
+        }
+    }
 }
-move_towards_point(view_wview[0]/2,y,5);
-show_debug_message(view_wview[0]);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if room_get_name(room) == "rm_gender_screen"{
+    with (obj_end_Valeria_big){
+        instance_destroy();
+    }
+
+    moving = true;
+}
 </string>
           </argument>
         </arguments>
