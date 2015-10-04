@@ -63,6 +63,7 @@
                 add_start = obj_play_Leo;
             }
             room_instance_add(room+1, 0, 0, add_start);
+            room_instance_add(room+1, room_width - 40, room_height - 40, obj_end_Leo);
             room_goto_next();
         }
     }

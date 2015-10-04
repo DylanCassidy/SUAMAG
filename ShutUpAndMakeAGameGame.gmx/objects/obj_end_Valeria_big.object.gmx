@@ -57,6 +57,13 @@
         moving = false;
         global.lover = 1;
         if global.player != noone {
+            if global.player == 1{
+                add_start = obj_play_Valeria;
+            } else {
+                add_start = obj_play_Leo;
+            }
+            room_instance_add(room+1, 0, 0, add_start);
+            room_instance_add(room+1, room_width - 40, room_height - 40, obj_end_Valeria);
             room_goto_next();
         }
     }
