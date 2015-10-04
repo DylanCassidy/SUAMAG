@@ -47,8 +47,8 @@
     <sprites name="bigs">
       <sprite>sprites\spr_end_Valeria_big</sprite>
       <sprite>sprites\spr_play_Leo_big</sprite>
-      <sprite>sprites\spr_flower</sprite>
       <sprite>sprites\spr_play_Valeria_big</sprite>
+      <sprite>sprites\spr_flower</sprite>
       <sprite>sprites\spr_end_Leo_big</sprite>
     </sprites>
   </sprites>
