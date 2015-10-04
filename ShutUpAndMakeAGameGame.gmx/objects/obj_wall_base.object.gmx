@@ -27,17 +27,48 @@
             <kind>1</kind>
             <string>depth = -100;
 move = 0;
+set_rotate = false;
+rotate = 0;
+steps = 0;
 
 initial = random(4);
 if initial == 1 {
-    image_angle = 0;
+    initial = 0;
 } else if initial == 2 {
-    image_angle = 90;
+    initial = 90;
 } else if initial == 3 {
-    image_angle = 180;
+    initial = 180;
 } else {
-    image_angle = 270;
+    initial = 270;
 }
+
+if initial != rotate {
+    set_rotate = true;
+    rotate = initial;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>set_rotate = true;
 </string>
           </argument>
         </arguments>
@@ -60,18 +91,81 @@ if initial == 1 {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>move += 0.25;
-if id mod 4 == 0 &amp;&amp; move mod 80 == 20 {
-    image_angle += 90;
-} else if id mod 4 == 1 &amp;&amp; move mod 80 == 40{
-    image_angle += 90;
-} else if id mod 4 == 2 &amp;&amp; move mod 80 == 60{
-    image_angle -= 90;
-} else if id mod 4 == 3 &amp;&amp; move mod 80 == 0{
-    image_angle -= 90;
+            <string>if rotate == 0 {
+    move += 0.25;
+    if id mod 4 == 0 &amp;&amp; move mod 80 == 20 {
+        set_rotate = true;
+        rotate += 90;
+    } else if id mod 4 == 1 &amp;&amp; move mod 80 == 40{
+        set_rotate = true;
+        rotate += 90;
+    } else if id mod 4 == 2 &amp;&amp; move mod 80 == 60{
+        set_rotate = true;
+        rotate -= 90;
+    } else if id mod 4 == 3 &amp;&amp; move mod 80 == 0{
+        set_rotate = true;
+        rotate -= 90;
+    }
+    if move == 80 {
+        move = 0;
+    }
 }
-if move == 80 {
-    move = 0;
+
+if set_rotate {
+    if (rotate &gt; 0) {
+        image_angle += 90;
+        if ((image_angle mod 360 == 0) &amp;&amp; ((collision_rectangle(x, y-2, x+sprite_width, y+3, obj_enemy, false, false) != noone) || (collision_rectangle(x, y-2, x+sprite_width, y+3, obj_play_base, false, false) != noone))) {
+            image_angle -= 90;
+            alarm[0] = 1;
+            set_rotate = false;
+        }
+        else if ((image_angle mod 360 == 90) &amp;&amp; ((collision_rectangle(x-2, y-sprite_width, x+3, y, obj_enemy, false, false) != noone) || (collision_rectangle(x-2, y-sprite_width, x+3, y, obj_play_base, false, false) != noone))) {
+            image_angle -= 90;
+            alarm[0] = 1;
+            set_rotate = false;
+        }
+        else if ((image_angle mod 360 == 180) &amp;&amp; ((collision_rectangle(x-sprite_width, y-3, x, y+2, obj_enemy, false, false) != noone) || (collision_rectangle(x-sprite_width, y-3, x, y+2, obj_play_base, false, false) != noone))) {
+            image_angle -= 90;
+            alarm[0] = 1;
+            set_rotate = false;
+        }
+        else if ((image_angle mod 360 == 270) &amp;&amp; ((collision_rectangle(x-3, y, x+2, y+sprite_width, obj_enemy, false, false) != noone) || (collision_rectangle(x-3, y, x+2, y+sprite_width, obj_play_base, false, false) != noone))) {
+            image_angle -= 90;
+            alarm[0] = 1;
+            set_rotate = false;
+        }
+        else {
+            set_rotate = false;
+            rotate = 0;
+        }
+    }
+    else if (rotate &lt; 0) {
+        image_angle -= 90;
+        if ((image_angle mod 360 == 0) &amp;&amp; ((collision_rectangle(x, y-2, x+sprite_width, y+3, obj_enemy, false, false) != noone) || (collision_rectangle(x, y-2, x+sprite_width, y+3, obj_play_base, false, false) != noone))) {
+            image_angle += 90;
+            alarm[0] = 1;
+            set_rotate = false;
+        }
+        else if ((image_angle mod 360 == 90) &amp;&amp; ((collision_rectangle(x-2, y-sprite_width, x+3, y, obj_enemy, false, false) != noone) || (collision_rectangle(x-2, y-sprite_width, x+3, y, obj_play_base, false, false) != noone))) {
+            image_angle += 90;
+            alarm[0] = 1;
+            set_rotate = false;
+        }
+        else if ((image_angle mod 360 == 180) &amp;&amp; ((collision_rectangle(x-sprite_width, y-3, x, y+2, obj_enemy, false, false) != noone) || (collision_rectangle(x-sprite_width, y-3, x, y+2, obj_play_base, false, false) != noone))) {
+            image_angle += 90;
+            alarm[0] = 1;
+            set_rotate = false;
+        }
+        else if ((image_angle mod 360 == 270) &amp;&amp; ((collision_rectangle(x-3, y, x+2, y+sprite_width, obj_enemy, false, false) != noone) || (collision_rectangle(x-3, y, x+2, y+sprite_width, obj_play_base, false, false) != noone))) {
+            image_angle += 90;
+            alarm[0] = 1;
+            set_rotate = false;
+        }
+        else {
+            set_rotate = false;
+            rotate = 0;
+        }
+    }
 }
 </string>
           </argument>
