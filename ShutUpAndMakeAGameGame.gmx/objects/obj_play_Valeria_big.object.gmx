@@ -26,6 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>moving = false;
+if room_get_name(room) == "rm_end_screen"{
+    image_xscale = 0.5;
+    image_yscale = 0.5;
+}
 </string>
           </argument>
         </arguments>

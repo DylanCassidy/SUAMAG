@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1920</width>
   <height>1080</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>1</vsnap>
+  <hsnap>1</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -53,7 +53,7 @@ global.player = noone;</code>
   </views>
   <instances>
     <instance objName="obj_play_Valeria_big" x="992" y="288" name="inst_0B66BEBF" locked="0" code="" scaleX="0.230171069502831" scaleY="0.211295038461685" colour="4294967295" rotation="0"/>
-    <instance objName="obj_play_Leo_big" x="672" y="288" name="inst_629967C1" locked="0" code="" scaleX="0.224458202719688" scaleY="0.210679605603218" colour="4294967295" rotation="0"/>
+    <instance objName="obj_play_Leo_big" x="671" y="288" name="inst_629967C1" locked="0" code="" scaleX="0.224458202719688" scaleY="0.210679605603218" colour="4294967295" rotation="0"/>
     <instance objName="obj_end_Valeria_big" x="992" y="640" name="inst_85D7AD2E" locked="0" code="" scaleX="0.239875391125679" scaleY="0.212415128946304" colour="4294967295" rotation="0"/>
     <instance objName="obj_end_Leo_big" x="672" y="640" name="inst_8015ECEA" locked="0" code="" scaleX="0.224458202719688" scaleY="0.210679605603218" colour="4294967295" rotation="0"/>
   </instances>

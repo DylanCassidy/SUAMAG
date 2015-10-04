@@ -26,6 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>moving = false;
+if room_get_name(room) == "rm_end_screen"{
+    image_xscale = 0.5;
+    image_yscale = 0.5;
+}
 </string>
           </argument>
         </arguments>
@@ -63,7 +67,8 @@
                 add_start = obj_play_Leo;
             }
             room_instance_add(room+1, 5, 5, add_start);
-            room_instance_add(room+1, room_width - 40, room_height - 40, obj_end_Leo);
+            room_instance_add(room+1, 90, 90, obj_end_Leo);
+            //room_instance_add(room+1, room_width - 40, room_height - 40, obj_end_Leo);
             room_goto_next();
         }
     }
