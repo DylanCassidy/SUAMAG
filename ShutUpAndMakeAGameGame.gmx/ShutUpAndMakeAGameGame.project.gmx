@@ -62,7 +62,7 @@
       <object>objects\obj_wall1</object>
       <object>objects\obj_wall2</object>
       <object>objects\obj_wall3</object>
-      <object>objects\obj_tile_red</object>
+      <object>objects\obj_wall4</object>
       <objects name="invisible">
         <object>objects\obj_colour_wall_base</object>
         <object>objects\obj_red_wall</object>
