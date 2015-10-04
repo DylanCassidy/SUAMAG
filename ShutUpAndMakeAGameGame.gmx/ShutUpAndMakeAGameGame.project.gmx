@@ -117,6 +117,7 @@
       <object>objects\obj_play_Valeria_big</object>
       <object>objects\obj_end_Valeria_big</object>
       <object>objects\obj_play_Leo_big</object>
+      <object>objects\obj_flower</object>
     </objects>
   </objects>
   <rooms name="rooms">
