@@ -41,6 +41,7 @@
     </sprites>
     <sprites name="misc">
       <sprite>sprites\spr_submit</sprite>
+      <sprite>sprites\spr_clicker</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -59,7 +60,7 @@
       <object>objects\obj_tile_red</object>
     </objects>
     <objects name="tile">
-      <object>objects\obj_tile_blue</object>
+      <object>objects\obj_tile_base</object>
       <object>objects\obj_tile_red</object>
       <object>objects\obj_tile_blue</object>
       <object>objects\obj_tile_yellow</object>
@@ -91,6 +92,7 @@
     </objects>
     <objects name="misc">
       <object>objects\obj_submit</object>
+      <object>objects\obj_clicker</object>
     </objects>
   </objects>
   <rooms name="rooms">
