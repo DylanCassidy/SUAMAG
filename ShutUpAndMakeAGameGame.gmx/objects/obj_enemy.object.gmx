@@ -7,7 +7,102 @@
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
-  <events/>
+  <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>depth = -100;
+direction = random(360);
+speed = 4;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if ((direction &gt;= 0) &amp;&amp; (direction &lt;= 90)) {
+    if ((direction &gt;= 0) &amp;&amp; (direction &lt; 90)) {
+    // Headed East
+        id1 = instance_position(x + (sprite_width / 2) + 1, y, all);
+        id2 = instance_position(x + (sprite_width / 2) - 1, y - 31, all);
+        if (object_get_name(id1.object_index) == object_get_name(id2.object_index)) {
+            // Both points are the same object
+            ;
+        }
+        else {
+            
+        }
+    }
+    if ((direction &gt; 0) &amp;&amp; (direction &lt;= 90)) {
+    // Headed North
+    }
+}
+else if ((direction &gt;= 90) &amp;&amp; (direction &lt;= 180)) {
+    if ((direction &gt;= 90) &amp;&amp; (direction &lt; 180)) {
+    // Headed North
+    }
+    if ((direction &gt; 90) &amp;&amp; (direction &lt;= 180)) {
+    // Headed West
+    }
+}
+else if ((direction &gt;= 180) &amp;&amp; (direction &lt;= 270)) {
+    if ((direction &gt;= 180) &amp;&amp; (direction &lt; 270)) {
+    // Headed West
+    
+    }
+    if ((direction &gt; 180) &amp;&amp; (direction &lt;= 270)) {
+    // Headed South
+    }
+}
+else if (direction &gt;= 360) {
+    show_debug_message("Direction is &gt;= 360!");
+    // maybe change direction regarding 360's
+}
+else {
+    if ((direction &gt;= 270) &amp;&amp; (direction &lt; 360)) {
+    // Headed South
+    
+    }
+    if ((direction &gt; 270) &amp;&amp; (direction &lt;= 360)) {
+    // Headed East
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>
